@@ -44,15 +44,15 @@ function App() {
   return (
     <div className="App">
 
-      <div className="dial__circle">
+      <div className="dial">
         <img className="dial__line" src="/img/Line.png" alt=""
           style={{ transform: `rotate(${line}deg)` }}></img>
       </div>
 
       <ul className="time">
-        <li className="min">{(minute >= 10) ? minute : '0' + minute}&nbsp;:&nbsp;</li>
-        <li className="sec">{(second >= 10) ? second : '0' + second}&nbsp;:&nbsp;</li>
-        <li className="milsec">{(milsecond >= 10) ? milsecond : '0' + milsecond}</li>
+        <li className="time__min">{(minute >= 10) ? minute : '0' + minute}&nbsp;:&nbsp;</li>
+        <li className="time__sec">{(second >= 10) ? second : '0' + second}&nbsp;:&nbsp;</li>
+        <li className="time__milsec">{(milsecond >= 10) ? milsecond : '0' + milsecond}</li>
       </ul>
 
       <ul>
